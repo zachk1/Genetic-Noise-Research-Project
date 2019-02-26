@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <title>Noise Lab</title>
+        <link rel="stylesheet" href="Noise.css">
+        <script src="Scripts/Chart.bundle.min.js"></script>
+    </head>
+    
+    <header>
+        <div class="sticky">
+            <div class="header-right">
+                <a class="active" href="FrontPage.html">Home</a>
+                <a href="Description.html"> Details</a>
+                <a href="Bios.html">Bios</a>
+            </div>
+        </div>
+    </header>
+    <br><br/>
+    <br><br/>
+    <body>
+    <button onclick = "gillespie()">Start</button>
+    <button onclick = "stopAlgorithm()">Stop</button>
+    
+    <h1>Transcription Propensity:</h1>
+        <input type="range" min="1" max="10" value ="5" class="slider" id="i1">
+        <p><span id="d1"></span></p>
+    
+    <h1>Translation Propensity:</h1>
+        <input type="range" min="1" max="100000" value ="50000" class="slider" id="i2">
+        <p><span id="d2"></span></p>
+    
+    <h1>RNA Degradation Propensity:</h1>
+        <input type="range" min="10" max="100" value ="50" class="slider" id="i3">
+        <p><span id="d3"></span></p>
+    
+    <h1>Protein Degradation Propensity:</h1>
+        <input type="range" min="10" max="100" value ="50" class="slider" id="i4">
+        <p><span id="d4"></span></p>
+
+    <h1>RNA Concentration:</h1>
+        <p>Value: <span id="d5"></span></p>
+    
+    <h1>Protein Concentration:</h1>
+        <p>Value: <span id="d6"></span></p>
+    
+    <Canvas id="myChart1"></Canvas>
+    <Canvas id="myChart2"></Canvas>
+        
+    <script src="Scripts/FrontPageAlgorithmNew3.js"></script>
+    </body>
+</html>
