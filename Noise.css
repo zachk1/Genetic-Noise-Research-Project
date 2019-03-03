@@ -153,3 +153,9 @@ img {
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.image-txt-container {
+    display: flex;
+    align-items:center;
+    flex-direction: row;
+}
